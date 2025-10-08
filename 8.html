@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خارطة الطريق | ريال كوين - التقاليد السعودية تلتقي بالبلوكشين</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            100: '#f5e8d1',
+                            500: '#d4a373',
+                            900: '#99582a',
+                        },
+                        secondary: {
+                            100: '#e9edc9',
+                            500: '#ccd5ae',
+                            900: '#6b705c',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap');
+        body {
+            font-family: 'Tajawal', sans-serif;
+        }
+        .islamic-pattern {
+            background-image: url('https://static.photos/textures/1200x630/5');
+            background-size: 300px;
+            opacity: 0.1;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(212,163,115,0.8) 0%, rgba(204,213,174,0.6) 100%);
+        }
+        .timeline-item:not(:last-child):after {
+            content: '';
+            position: absolute;
+            right: 7px;
+            top: 24px;
+            height: calc(100% - 24px);
+            width: 2px;
+            background: #d4a373;
+        }
+    </style>
+</head>
+<body class="bg-primary-100 text-secondary-900">
+    <!-- Navigation -->
+    <nav class="bg-white/80 backdrop-blur-md fixed w-full z-10 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i data-feather="coin" class="text-primary-500 h-8 w-8"></i>
+                        <span class="mr-2 text-xl font-bold text-primary-900">ريال كوين</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 space-x-reverse">
+                    <a href="2.html" class="text-primary-900 hover:text-primary-500 px-3 py-2 font-medium">الرئيسية</a>
+                    <a href="6.html" class="text-primary-900 hover:text-primary-500 px-3 py-2 font-medium">عن المشروع</a>
+                    <a href="4.html" class="text-primary-900 hover:text-primary-500 px-3 py-2 font-medium">الورقة البيضاء</a>
+                    <a href="8.html" class="text-primary-900 hover:text-primary-500 px-3 py-2 font-medium border-b-2 border-primary-500">خارطة الطريق</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button p-2">
+                        <i data-feather="menu" class="text-primary-900"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="vanta-bg" class="hero-gradient min-h-screen pt-32 pb-20 relative overflow-hidden">
+        <div class="absolute inset-0 islamic-pattern"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+                <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-right">
+                    <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
+                        <span class="block">خارطة طريق</span>
+                        <span class="block text-primary-900">رحلتنا نحو المستقبل</span>
+                    </h1>
+                    <p class="mt-3 text-lg text-white sm:mt-5 sm:text-xl sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                        اكتشف الخطوات المستقبلية لريال كوين خلال السنوات الخمس القادمة، وكيف سنقود الابتكار المالي في المملكة العربية السعودية.
+                    </p>
+                    <div class="mt-8">
+                        <a href="#roadmap" class="inline-flex items-center text-white hover:text-primary-200">
+                            <i data-feather="arrow-down" class="ml-2"></i>
+                            استكشف الخط الزمني
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-12 relative lg:col-span-6 lg:mt-0">
+                    <div class="relative mx-auto w-full rounded-lg shadow-2xl overflow-hidden">
+                        <img class="w-full" src="https://static.photos/office/1024x576/7" alt="فريق سعودي يعمل على تقنية البلوكشين">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary-500/30 to-transparent"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5-Year Roadmap Section -->
+    <section id="roadmap" class="py-20 bg-primary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-16">
+                <h2 class="text-base text-primary-500 font-semibold tracking-wide uppercase">خارطة الطريق</h2>
+                <p class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
+                    رحلتنا خلال السنوات الخمس القادمة
+                </p>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Year 1 -->
+                <div class="relative timeline-item pr-8">
+                    <div class="absolute right-0 top-0 flex items-center justify-center w-4 h-4 rounded-full bg-primary-500 ring-8 ring-primary-100">
+                        <i data-feather="lightbulb" class="w-2.5 h-2.5 text-white"></i>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex justify-between">
+                            <h3 class="text-xl font-bold text-primary-900">السنة الأولى – 2025</h3>
+                            <time class="text-sm text-primary-500">الربع 1 - الربع 4</time>
+                        </div>
+                        <p class="mt-2 text-gray-700">
+                            توسيع قاعدة المستخدمين محلياً، وتعزيز التفاعل المجتمعي، والتكامل مع الشركات السعودية الكبرى.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Year 2 -->
+                <div class="relative timeline-item pr-8">
+                    <div class="absolute right-0 top-0 flex items-center justify-center w-4 h-4 rounded-full bg-primary-500 ring-8 ring-primary-100">
+                        <i data-feather="users" class="w-2.5 h-2.5 text-white"></i>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex justify-between">
+                            <h3 class="text-xl font-bold text-primary-900">السنة الثانية – 2026</h3>
+                            <time class="text-sm text-primary-500">الربع 1 - الربع 4</time>
+                        </div>
+                        <p class="mt-2 text-gray-700">
+                            إطلاق تطبيق الجوال لتسهيل الوصول، والتكامل مع المزيد من المنصات، وبدء الشراكات مع مراكز التقنية الإقليمية.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Year 3 -->
+                <div class="relative timeline-item pr-8">
+                    <div class="absolute right-0 top-0 flex items-center justify-center w-4 h-4 rounded-full bg-primary-500 ring-8 ring-primary-100">
+                        <i data-feather="globe" class="w-2.5 h-2.5 text-white"></i>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex justify-between">
+                            <h3 class="text-xl font-bold text-primary-900">السنة الثالثة – 2027</h3>
+                            <time class="text-sm text-primary-500">الربع 1 - الربع 4</time>
+                        </div>
+                        <p class="mt-2 text-gray-700">
+                            التوسع دوليًا، وإقامة شراكات لريال كوين في دول الخليج والشرق الأوسط، وجذب المتاجر العالمية.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Year 4 -->
+                <div class="relative timeline-item pr-8">
+                    <div class="absolute right-0 top-0 flex items-center justify-center w-4 h-4 rounded-full bg-primary-500 ring-8 ring-primary-100">
+                        <i data-feather="trending-up" class="w-2.5 h-2.5 text-white"></i>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex justify-between">
+                            <h3 class="text-xl font-bold text-primary-900">السنة الرابعة – 2028</h3>
+                            <time class="text-sm text-primary-500">الربع 1 - الربع 4</time>
+                        </div>
+                        <p class="mt-2 text-gray-700">
+                            إطلاق مزايا التمويل اللامركزي (DeFi) المتقدمة، والتعاون في مشاريع NFT، وإطلاق برامج التعليم المالي.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Year 5 -->
+                <div class="relative timeline-item pr-8">
+                    <div class="absolute right-0 top-0 flex items-center justify-center w-4 h-4 rounded-full bg-primary-500 ring-8 ring-primary-100">
+                        <i data-feather="award" class="w-2.5 h-2.5 text-white"></i>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex justify-between">
+                            <h3 class="text-xl font-bold text-primary-900">السنة الخامسة – 2029</h3>
+                            <time class="text-sm text-primary-500">الربع 1 - الربع 4</time>
+                        </div>
+                        <p class="mt-2 text-gray-700">
+                            أن نصبح العملة الرقمية الرائدة في منطقة الشرق الأوسط وشمال أفريقيا، والتوسع عالمياً، وتحقيق الاعتماد الشرعي الكامل.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary-500 text-white text-center">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold sm:text-4xl">
+                هل أنت مستعد للانضمام إلى مستقبل البلوكشين السعودي؟
+            </h2>
+            <p class="mt-4 text-lg sm:text-xl">
+                اشترِ ريال كوين اليوم وكن جزءًا من رحلتنا خلال السنوات الخمس القادمة!
+            </p>
+            <div class="mt-8">
+                <a href="#" class="bg-white text-primary-500 font-bold px-6 py-3 rounded-lg hover:bg-gray-100 transition">
+                    اشترِ الآن
+                </a>
+            </div>
+        </div>
+    </section>
+   <!-- Footer -->
+    <footer class="bg-primary-900">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 gap-8 md:grid-cols-4">
+                <div class="col-span-2">
+                    <div class="flex items-center">
+                        <i data-feather="coin" class="text-primary-300 h-8 w-8"></i>
+                        <span class="ml-2 text-xl font-bold text-white">ريال كوين</span>
+                    </div>
+                    <p class="mt-4 text-sm text-primary-100">
+                        العملة الرقمية التي تجلب التراث السعودي إلى عصر البلوكشين.
+                    </p>
+                    <div class="mt-4 flex space-x-6">
+                        <a href="#" class="text-primary-100 hover:text-white">
+                            <i data-feather="twitter"></i>
+                        </a>
+                        <a href="#" class="text-primary-100 hover:text-white">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="#" class="text-primary-100 hover:text-white">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-primary-300 tracking-wider uppercase">الشركة</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="6.html" class="text-base text-primary-100 hover:text-white">من نحن</a></li>
+                        <li><a href="10.html" class="text-base text-primary-100 hover:text-white">الفريق</a></li>
+                        <li><a href="12.html" class="text-base text-primary-100 hover:text-white">الوظائف</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-primary-300 tracking-wider uppercase">القانوني</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="14.html" class="text-base text-primary-100 hover:text-white">الخصوصية</a></li>
+                        <li><a href="16.html" class="text-base text-primary-100 hover:text-white">الشروط</a></li>
+                        <li><a href="18.html" class="text-base text-primary-100 hover:text-white">الامتثال</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-primary-700 pt-8 flex justify-between">
+                <p class="text-base text-primary-100">
+                    &copy; 2025 ريال كوين. جميع الحقوق محفوظة.
+                </p>
+          	      <div>
+			<a href="8.html" class="text-primary-200 hover:text-white">العربية</a>
+    			<a href="7.html" class="text-primary-200 hover:text-white mr-4">English</a>
+			</div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        VANTA.WAVES({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xd4a373,
+            shininess: 35.00,
+            waveHeight: 15.00,
+            waveSpeed: 0.85,
+            zoom: 0.8
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            feather.replace();
+
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.createElement('div');
+            mobileMenu.className = 'hidden md:hidden fixed inset-0 bg-white z-20';
+            mobileMenu.innerHTML = `
+                <div class="flex justify-start p-4">
+                    <button class="mobile-menu-close p-2">
+                        <i data-feather="x" class="text-primary-900"></i>
+                    </button>
+                </div>
+                <div class="px-4 pt-2 pb-8 space-y-4">
+                    <a href="2.html" class="block px-3 py-2 text-primary-900 font-medium">الرئيسية</a>
+                    <a href="6.html" class="block px-3 py-2 text-primary-900 font-medium border-r-4 border-primary-500 pr-2">عن المشروع</a>
+                    <a href="4.html" class="block px-3 py-2 text-primary-900 font-medium">الورقة البيضاء</a>
+                    <a href="8.html" class="block px-3 py-2 text-primary-900 font-medium">خارطة الطريق</a>
+                   
+                </div>
+            `;
+            document.body.appendChild(mobileMenu);
+
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.remove('hidden');
+                feather.replace();
+            });
+
+            document.addEventListener('click', function(e) {
+                if (e.target.closest('.mobile-menu-close') || 
+                    (!e.target.closest('.mobile-menu-button') && !mobileMenu.contains(e.target) && !mobileMenu.classList.contains('hidden'))) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
