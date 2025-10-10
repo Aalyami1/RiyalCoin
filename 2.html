@@ -249,6 +249,78 @@
     </div>
 
 
+<!-- Main card (centered content) -->
+<!-- Main card (centered content) -->
+<main class="flex justify-center items-center min-h-[70vh] px-4">
+  <div class="w-full max-w-3xl">
+    <h2 class="text-2xl font-bold text-center text-primary-900 mb-6">مشاركة ريال كوين</h2>
+
+    <!-- Share buttons -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+     
+
+      <div class="flex flex-col items-center bg-white/50 p-10 rounded-lg shadow">
+	
+        <div class="font-semibold text-primary-900">X (تويتر)</div>
+       <div class="text-xs text-secondary-900/60 mb-2"></div>
+        <button data-platform="x" class="px-4 py-2 rounded bg-primary-500 text-white hover:bg-primary-900 transition">
+          مشاركة
+        </button>
+      </div>
+
+      <div class="flex flex-col items-center bg-white/50 p-10 rounded-lg shadow">
+        <div class="font-semibold text-primary-900">إنستغرام</div>
+        <div class="text-xs text-secondary-900/60 mb-2"></div>
+        <button data-platform="instagram" class="px-4 py-2 rounded bg-primary-500 text-white hover:bg-primary-900 transition">
+          مشاركة
+        </button>
+      </div>
+
+      <div class="flex flex-col items-center bg-white/50 p-10 rounded-lg shadow">
+        <div class="font-semibold text-primary-900">تيك توك</div>
+        
+	
+	<div class="text-xs text-secondary-900/60 mb-2"></div>
+        <button data-platform="tiktok" class="px-4 py-2 rounded bg-primary-500 text-white hover:bg-primary-900 transition">
+          مشاركة
+        </button>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+
+<script>
+document.querySelectorAll("button[data-platform]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const platform = btn.dataset.platform;
+    const shareUrl = encodeURIComponent("https://riyalcoin.com"); // change this to your page URL
+    const shareText = encodeURIComponent("Check out RiyalCoin – where Gulf tradition meets blockchain!");
+    let url = "";
+
+    switch (platform) {
+      case "tiktok":
+        // TikTok sharing: open profile (no direct share link)
+        url = "https://www.tiktok.com/@riyalcoin2025";
+        break;
+      case "instagram":
+        // Instagram sharing: open profile (no direct share link)
+        url = "https://instagram.com/riyalcoin2025";
+        break;
+      case "x":
+        url = `https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`;
+        break;
+    }
+
+    if (url) {
+      window.open(url, "_blank", "width=600,height=500");
+    }
+  });
+});
+</script>
+
+
 <!-- Partners Section -->
 <section class="bg-gray-50 py-12 overflow-hidden">
   <h2 class="text-5xr font-bold text-center text-primary-900 mb-8">شركاؤنا</h2>
@@ -334,7 +406,7 @@
         <ul class="mt-4 space-y-3">
           <li><a href="6.html" class="text-base text-primary-100 hover:text-white">من نحن</a></li>
           <li><a href="10.html" class="text-base text-primary-100 hover:text-white">الفريق</a></li>
-          <li><a href="12.html" class="text-base text-primary-100 hover:text-white">الوظائف</a></li>
+          <li><a href="12.html" class="text-base text-primary-100 hover:text-white">تواصل معنا</a></li>
         </ul>
       </div>
 
